@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SkyCast</h1>
+        <input type="text" id="city" placeholder="Enter city name">
+        <button id="getWeather">Get Weather</button>
+        <button id="getCurrentLocation">Get Current Location Weather</button>
+        <div id="unitToggle">
+            <label for="unit">Temperature Unit:</label>
+            <select id="unit">
+                <option value="metric">Celsius</option>
+                <option value="imperial">Fahrenheit</option>
+            </select>
+        </div>
+        <button id="addToWishlist">Add to Wishlist</button>
+        <div id="weather">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+        </div>
+        <div id="forecast">
+            <h2>5-Day Forecast</h2>
+            <div id="forecastItems"></div>
+        </div>
+        <div id="wishlist">
+            <h2>Wishlist</h2>
+            <ul id="wishlistItems"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
